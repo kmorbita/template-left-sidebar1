@@ -1,0 +1,1 @@
+Sample Left Sidebar with collapse function using JavaScript leaving only the icon links and user image.
