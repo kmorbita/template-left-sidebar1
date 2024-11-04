@@ -13,11 +13,6 @@
     --color2: #ACC7B4;
 }
 
-aside {
-    background-color: var(--color2);
-    width: 15%;
-}
-
 nav {
     width: 100%;
     background-color: var(--color1);
@@ -29,17 +24,24 @@ nav > ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    width: 85%;
+    width: 100%;
+    background-color: aqua;
+    position: fixed;
+}
+
+.header {
+    transition: 0.75s ease-out;
+    /* box-shadow: 2px 2px 2px; */
 }
 
 .header li {
     height: 3rem;
     width: 10rem;
 }
-.header li:first-child {
+/* .header li:first-child {
     margin-right: auto;
     margin-left: 20px;
-}
+} */
 
 .header li:hover {
     background-color: var(--color2);
@@ -59,5 +61,68 @@ nav > ul {
     color: black;
 }
 
+.sidebar {
+    background-color: var(--color2);
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    transition: 0.75s ease-out;
+    box-shadow: 1px 0px 2px;
+    z-index: 1;
+}
 
+.sidebar span {
+    cursor: pointer;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    margin: auto 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    /* margin: 2rem 1rem; */
+}
+
+.sidebar li {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.sidebar li:hover {
+    background-color: var(--color1);
+}
+
+.sidebar li:hover a{
+    color: #fff;
+}
+
+.sidebar li img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    margin: 0rem 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--color1);
+}
+
+.link {
+    transition: 0.90s ease-out;
+}
 

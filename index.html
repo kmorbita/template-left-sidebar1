@@ -11,16 +11,23 @@
 <body>
     <script src="custom.js"></script>
     <nav>
-        <aside>
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3 class="sidebar-title">Now!</h3>
+                <span onclick=toggleSidebar()> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></span>
+            </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
+                <li><img class="icon" src="/images/home.png"><a href="#" class="link">Home</a></li>
+                <li><img class="icon" src="/images/projects.png"><a href="#" class="link">Projects</a></li>
+                <li><img class="icon" src="/images/about.png"><a href="#" class="link">About</a></li>
             </ul>
         </aside>
         <ul class="header">
-            <li><a href="#">CodingNow!</a></li>
-            <li><a href="#">Hire Me!</a></li>
+            <!-- <li><a href="#">CodingNow!</a></li> -->
+            <li><a href="#">LINK</a></li>
         </ul>
     </nav>
 </body>
